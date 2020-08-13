@@ -1,12 +1,12 @@
 import pygame
 pygame.init()
 
-win = pygame.display.set_mode((500,480))
+win = pygame.display.set_mode((1000,480))
 pygame.display.set_caption("First Game")
 
-walkRight = [pygame.image.load('R1.png'), pygame.image.load('R2.png'), pygame.image.load('R3.png'),
-             pygame.image.load('R4.png'), pygame.image.load('R5.png'), pygame.image.load('R6.png'), 
-             pygame.image.load('R7.png'), pygame.image.load('R8.png'), pygame.image.load('R9.png')]
+walkRight = [pygame.image.load('R1E.png'), pygame.image.load('R2E.png'), pygame.image.load('R3E.png'),
+             pygame.image.load('R4E.png'), pygame.image.load('R5E.png'), pygame.image.load('R6E.png'), 
+             pygame.image.load('R7E.png'), pygame.image.load('R8E.png'), pygame.image.load('R9E.png')]
 walkLeft = [pygame.image.load('L1.png'), pygame.image.load('L2.png'), pygame.image.load('L3.png'), 
             pygame.image.load('L4.png'), pygame.image.load('L5.png'), pygame.image.load('L6.png'), 
             pygame.image.load('L7.png'), pygame.image.load('L8.png'), pygame.image.load('L9.png')]
@@ -31,7 +31,7 @@ walkCount = 0
 def redrawGameWindow():
     global walkCount
     
-    win.blit(bg, (0,0))  
+    # win.blit(bg, (0,0))  
     if walkCount + 1 >= 27:
         walkCount = 0
         
@@ -65,7 +65,7 @@ while run:
         left = True
         right = False
 
-    elif keys[pygame.K_RIGHT] and x < 500 - vel - width:  
+    elif keys[pygame.K_RIGHT] and x < 1000 - vel - width:  
         x += vel
         left = False
         right = True

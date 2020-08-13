@@ -1,0 +1,7 @@
+print("Hello World")
+name = input("Hello, what is your name? ")
+age = input("How old are you? ")
+lunch = input("What do you want for lunch? ")
+print("\n\n\n")
+print(f"Hello {name}, your lunch order of {lunch} is here.")
+print(f"You are tall for an {age} year old")

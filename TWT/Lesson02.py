@@ -1,9 +1,6 @@
 # Jumping and Boundaries
-import math
-import random
 import pygame
-import tkinter as tk
-from tkinter import messagebox
+
 
 
 # start pygame module
@@ -78,8 +75,8 @@ while run:
 
 
 
-    # this cleans up after the Character
-    win.fill((0, 0, 0))
+    # # this cleans up after the Character
+    # win.fill((0, 0, 0))
 
     # Draw our character
     pygame.draw.rect(win, (255, 0, 0), (x, y , width, height) )
