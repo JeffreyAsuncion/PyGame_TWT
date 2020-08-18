@@ -31,7 +31,7 @@ walkCount = 0
 def redrawGameWindow():
     global walkCount
     
-    # win.blit(bg, (0,0))  
+    win.blit(bg, (0,0))  
     if walkCount + 1 >= 27:
         walkCount = 0
         
