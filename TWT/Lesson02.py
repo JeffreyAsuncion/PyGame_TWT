@@ -17,8 +17,8 @@ pygame.display.set_caption("First Game")
 
 #Spawn character
 # where spawn
-x = 500
-y = 500
+x = 50
+y = 50
 # size of character
 width = 40
 height = 60
